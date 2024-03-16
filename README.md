@@ -24,6 +24,10 @@ Streamliner is a web application initially designed to automate the manual writi
 * **src/main/java/smtpHandlers/smtpSubmissionHandler:** Provides proper headers for requests and extracts data from payload to smtpSubPayloadProcessor.
 * **src/main/java/smtpHandlers/smtpSubPayloadProcessor:** Parses form/payload data and passes to smtpConnect.
 
+### Code Flow Visualizer:
+* dbSubmissionHandler -> dbSubPayloadProcessor -> dbInputHandler
+* smtpSubmissionHandler -> smtpSubPayloadProcessor -> smtpConnect -> dbRetrieveHandler
+
 ## Releases:
 
 v1.0.0 - First release. Contains all necessary source code required for successful database storage and SMTP transaction.
