@@ -3,7 +3,7 @@ import java.sql.*;
 import java.util.Properties;
 
 public class dbInputHandler {
-    public static void sqlHandlerMethod(String fname, String lname, String subject, String timein, String timeout, String dbPassword) throws SQLException { //Creates insertion query for postgreSQL using payload/user input data.
+    public static void inputData(String fname, String lname, String subject, String timein, String timeout, String dbPassword) throws SQLException { //Creates insertion query for postgreSQL using payload/user input data (using JDBC API).
         String insertStatement = "insert into studentinfo (studentfname, studentlname, studentsubject, studenttimein, studenttimeout) values (?, ?, ?, ?, ?)";
 
         Properties props = new Properties();
