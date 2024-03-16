@@ -4,10 +4,10 @@ Streamliner is a web application initially designed to automate the manual writi
 
 ## Specifics.
 * Developed on Intellij w/ Maven build.
-* Uses HTTPServer API for handling requests/responses (com.sun.net.httpserver.HttpServer).
-* Communicates with localhost PostgreSQL database using JDBC API (java.sql.*).
+* Uses HTTPServer API for handling requests/responses (path: com.sun.net.httpserver.HttpServer).
+* Communicates with localhost PostgreSQL database using JDBC API (path: java.sql.*).
 * Uses PostgreSQL driver (version 42.7.2, found in pom.xml dependencies).
-* Uses Jakarta Mail API for SMTP connection (version 2.0.1, found in pom.xml dependencies, jakarta.mail.*).
+* Uses Jakarta Mail API for SMTP connection (version 2.0.1, found in pom.xml dependencies, path: jakarta.mail.*).
 * SMTP connection is established with Google SMTP server @ host smtp.gmail.com.
 * No frameworks used; developed purely in Java.
 
