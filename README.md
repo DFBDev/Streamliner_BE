@@ -1,6 +1,6 @@
 ## What is Streamliner?
 
-Streamliner is a web application initially designed to automate the manual writing and transportation of tutoring records in a college environment. Specifically, it provides a streamlined way for a tutor to record student information on a web form and send it as an email to a custom location. The repo for the view/frontend can be found [here](https://github.com/DFBDev/Streamliner_FE). Due to its flexible nature, all of the MVC source code for Streamliner can be adapted to other needs by applying slight alterations and following the proper setup. **The current state of the application is intended to be hosted locally.**
+Streamliner is a web application initially designed to automate the manual writing and transportation of tutoring records in a college environment. Specifically, it provides a streamlined way for a tutor to record student information on a web form and send it as an email to a custom location. The repo for the view/frontend can be found [here](https://github.com/DFBDev/Streamliner_FE). Due to its flexible nature, all of the MVC source code for Streamliner can be adapted to other needs by applying slight alterations and following the proper setup (which is further elaborated upon in the "Changing/Modifying" section of this readme). **The current state of the application is intended to be hosted locally. ALL REQUESTS, ASIDE FROM SMTP, ARE NOT CURRENTLY SSL/TLS ENABLED.**
 
 ## Specifics.
 * Developed on Intellij w/ Maven build.
