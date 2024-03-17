@@ -1,6 +1,6 @@
 import reqHandlers_Controller.dbSubmissionHandler;
 import com.sun.net.httpserver.HttpServer;
-import smtpHandlers.smtpSubmissionHandler;
+import reqHandlers_Controller.smtpSubmissionHandler;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 

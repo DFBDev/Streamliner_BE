@@ -1,4 +1,4 @@
-package reqHandlers_Controller;
+package smtpHandlers;
 import jakarta.mail.MessagingException;
 import smtpHandlers.smtpConnect;
 
