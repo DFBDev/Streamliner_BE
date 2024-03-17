@@ -1,4 +1,4 @@
-package reqHandlers_Controller;
+package smtpHandlers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import smtpHandlers.smtpSubPayloadProcessor;
