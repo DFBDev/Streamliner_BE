@@ -1,5 +1,7 @@
-package smtpHandlers;
+package reqHandlers_Controller;
 import jakarta.mail.MessagingException;
+import smtpHandlers.smtpConnect;
+
 import java.sql.SQLException;
 
 public class smtpSubPayloadProcessor {

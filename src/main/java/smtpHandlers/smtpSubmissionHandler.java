@@ -1,7 +1,7 @@
 package smtpHandlers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import smtpHandlers.smtpSubPayloadProcessor;
+import reqHandlers_Controller.smtpSubPayloadProcessor;
 
 import java.io.IOException;
 import java.io.InputStream;
