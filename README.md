@@ -13,16 +13,16 @@ Streamliner is a web application initially designed to automate the manual writi
 
 ## Structure.
 ### dataHandlers package:
-* **src/main/java/dataHandlers/dbInputHandler:** Contains inputData method which directly handles insertion query execution using arguments passed from dbSubPayloadProcessor.
-* **src/main/java/dataHandlers/dbRetrieveHandler:** Contains retrieveData method which directly pulls data from database and returns it as ArrayList. Used in smtpConnect for email body.
-* **src/main/java/dataHandlers/dbSubPayloadProcessor:** Contains processData method which is responsible for parsing & validating payload/form data from request; passes data to dbInputHandler's inputData method for database insertion.
+* `src/main/java/dataHandlers/dbInputHandler`: Contains inputData method which directly handles insertion query execution using arguments passed from dbSubPayloadProcessor.
+* `src/main/java/dataHandlers/dbRetrieveHandler`: Contains retrieveData method which directly pulls data from database and returns it as ArrayList. Used in smtpConnect for email body.
+* `src/main/java/dataHandlers/dbSubPayloadProcessor`: Contains processData method which is responsible for parsing & validating payload/form data from request; passes data to dbInputHandler's inputData method for database insertion.
 ### reqHandlers package:
-* **src/main/java/reqHandlers/dbSubmissionHandler:** Contains handle method which is responsible for providing proper headers for requests and extracting data from payload to dbSubPayloadProcessor.
-* **src/main/java/smtpHandlers/smtpSubmissionHandler:** Contains handle method which provides proper headers for requests and extracts data from payload to smtpSubPayloadProcessor.
-* **src/main/java/reqHandlers/faviconHandler:** Handles default favicon request.
+* `src/main/java/reqHandlers/dbSubmissionHandler`: Contains handle method which is responsible for providing proper headers for requests and extracting data from payload to dbSubPayloadProcessor.
+* `src/main/java/smtpHandlers/smtpSubmissionHandler`: Contains handle method which provides proper headers for requests and extracts data from payload to smtpSubPayloadProcessor.
+* `src/main/java/reqHandlers/faviconHandler`: Handles default favicon request.
 ### smtpHandlers package: 
-* **src/main/java/smtpHandlers/smtpConnect:** Contains sender method which is directly responsible for establishing SMTP connection with Google host smtp.gmail.com and creating email to be sent. 
-* **src/main/java/smtpHandlers/smtpSubPayloadProcessor:** Contains processData method which parses form/payload data and passes to smtpConnect's sender method.
+* `src/main/java/smtpHandlers/smtpConnect`: Contains sender method which is directly responsible for establishing SMTP connection with Google host smtp.gmail.com and creating email to be sent. 
+* `src/main/java/smtpHandlers/smtpSubPayloadProcessor`: Contains processData method which parses form/payload data and passes to smtpConnect's sender method.
 
 ### Code Flow Visualizer:
 * dbSubmissionHandler -> dbSubPayloadProcessor -> dbInputHandler
