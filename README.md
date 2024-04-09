@@ -30,7 +30,8 @@ Streamliner is a web application initially designed to automate the manual writi
 
 ## Releases:
 
-v1.0.0 - First release. Contains all necessary source code required for successful database storage and SMTP transaction.
+* `v1.0.0` - First release. Contains all necessary source code required for successful database storage and SMTP transaction.
+* `v1.0.1` - Created a handler for OPTIONS preflight request which enables private network access. Changed successful status-code from 200 to 204 to prevent infinite POST request pending. Removed debug statements to increase performance.
 
 ## Changing/Modifying:
 **COMING SOON**
