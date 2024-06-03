@@ -34,4 +34,8 @@ Streamliner is a web application initially designed to automate the manual writi
 * `v1.0.1` - Created a handler for OPTIONS preflight request which enables private network access. Changed successful status-code from 200 to 204 to prevent infinite POST request pending. Removed debug statements to increase performance.
 
 ## Changing/Modifying:
-**COMING SOON**
+In order for the application to be adapted to other needs, a few things need to change: the SMTP credentials, database location & properties,  and client payload manipulation.
+
+* `SMTP`: The current version of this application is designed to leverage the SMTP service provided by google. If you have already created a service via your google account, you may simply input your email and service password without changing any of the source code.
+* `Database`: Depending on database and application use, all parameters & arguments found in dbInputHandler.java, dbRetrieveHandler.java & dbSubPayloadProcess.java should be changed to accommodate individual needs (such as variable names, table name in the input statement, expected column values, database connection location, username, etc).
+* `Payload Manipulation`: Since payload is only expected to be manipulated in the dbSubPayloadProcess.java file, all variables and substring/split functions should reflect expected payload and should be changed as needed. The same maybe done for the SMTP request payload that is delivered via HTTP.
